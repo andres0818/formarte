@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "formarte",
+    "slug": "formarte",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "formarte"
+}
