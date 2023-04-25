@@ -5,7 +5,7 @@ import fondo from "../img/bannerhome-3.png";
 const Header = () => {
   return (
     <View className="w-full items-center">
-      <Text className="text-green-400 text-2xl font-bold m-3 mt-8">
+      <Text className="text-green-400 text-2xl font-bold m-3 mt-2">
         Formarte Medellín
       </Text>
       <Text className="text-slate-700 dark:text-white font-semibold text-lg m-4">
@@ -20,10 +20,3 @@ const Header = () => {
 };
 
 export default Header;
-
-const styles = StyleSheet.create({
-  banner: {
-    width: "100%",
-    height: "auto",
-  },
-});
