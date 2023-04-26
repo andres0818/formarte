@@ -9,6 +9,9 @@ import youtube from "./youtube.png";
 import instagram from "./instagram.png";
 import whatsapp from "./whatsapp.png";
 import recurso from "./Recurso.png";
+import luna from "./luna.png";
+import sol from "./sol.png";
+import formarte from "./formarte.png";
 
 export {
   usuario,
@@ -22,4 +25,7 @@ export {
   instagram,
   whatsapp,
   recurso,
+  luna,
+  sol,
+  formarte
 };
