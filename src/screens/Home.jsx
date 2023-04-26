@@ -13,11 +13,11 @@ const Home = ({navigation}) => {
     <View className="flex-1 bg-white dark:bg-gray-700">
       <KeyboardAvoidingScrollView stickyFooter={<NavBar navigation={navigation}/>}>
         <Header />
-        <View className="mb-10"></View>
+        <View className="mb-10"/>
         <Slide />
-        <View className="mb-10"></View>
+        <View className="mb-10"/>
         <InfoText />
-        <View className="mb-10"></View>
+        <View className="mb-10"/>
         <Footer />
       </KeyboardAvoidingScrollView>
     </View>
