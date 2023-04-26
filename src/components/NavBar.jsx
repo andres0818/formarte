@@ -3,10 +3,11 @@ import { Image, StyleSheet, TouchableOpacity, View } from "react-native";
 import * as icon from "../img";
 import { KeyboardAvoidingScrollView } from "@tbnb/react-native-keyboard-sticky-avoiding-scroll-view";
 
-const NavBar = () => {
+const NavBar = ({navigation}) => {
   return (
       <View style={styles.container} className=" bg-white dark:bg-gray-500">
-        <TouchableOpacity>
+        <TouchableOpacity
+        onPress={()=>navigation.navigate('home')}>
           <Image style={styles.img} source={icon.home} />
         </TouchableOpacity>
         <TouchableOpacity>
@@ -18,7 +19,9 @@ const NavBar = () => {
         <TouchableOpacity>
           <Image style={styles.img} source={icon.graduado} />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity 
+        onPress={()=>navigation.navigate('login')}
+        >
           <Image style={styles.img} source={icon.usuario} />
         </TouchableOpacity>
       </View>
