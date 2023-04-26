@@ -1,13 +1,25 @@
 import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
+import Header from "../../components/Header";
+import Filter from "../../components/Filter";
+import Slide from "../../components/Slide";
+import InfoText from "../../components/InfoText";
+import NavBar from "../../components/NavBar";
+import { KeyboardAvoidingScrollView } from "@tbnb/react-native-keyboard-sticky-avoiding-scroll-view";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
-    <View style={styles.container}>
-      <Text className="text-red-400 text-md font-bold mt-2">
-        Formarte Medellín
-      </Text>
-      <Text>Preicfer y Preuniversitarios en Medellín</Text>
+    <View className="flex-1 bg-white dark:bg-gray-700">
+      <KeyboardAvoidingScrollView stickyFooter={<NavBar />}>
+        <Header />
+        <View className="mb-10"></View>
+        <Slide />
+        <View className="mb-10"></View>
+        <InfoText />
+        <View className="mb-10"></View>
+        <Footer />
+      </KeyboardAvoidingScrollView>
     </View>
   );
 };
@@ -15,15 +27,7 @@ const Home = () => {
 export default Home;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    backgroundColor: "white",
-  },
-  title: {
-    color: "#05e06d",
-    fontSize: 30,
-    fontWeight: "700",
-    lineHeight: 40,
+  navbar: {
+    position: 1,
   },
 });
