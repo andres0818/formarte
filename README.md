@@ -1,4 +1,4 @@
-# Juego desarrollado con react native y tailwind 
+# Aplicaión desarrollado con react native y tailwind 
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap:10px">
 <video width="320" height="240" controls loop>
