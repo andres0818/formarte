@@ -9,7 +9,7 @@ const Header = ({
 }) => {
   return (
     <View className="w-full items-center mb-8">
-      <Text className="text-green-400 text-2xl font-bold m-3 mt-8">
+      <Text className="text-green-400 text-3xl font-bold m-3 mt-8">
         {titulo}
       </Text>
       <Text className="text-slate-700 dark:text-white font-semibold text-lg mb-8">
