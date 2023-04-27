@@ -3,7 +3,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useColorScheme } from "nativewind";
 import NavIcon from "./src/components/NavIcon";
-import icon from "./src/img/formarte.png";
 import { colorStyle } from "./src/Styles/variants";
 import Home from "./src/screens/Home";
 import Login from "./src/screens/Login";
@@ -12,63 +11,36 @@ import Register from "./src/screens/Register";
 
 const Stack = createNativeStackNavigator();
 
+function MyStackNavigator({ children, toggleColorScheme }) {
+  const { colorScheme } = useColorScheme();
+
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerLeft: () => (
+          <NavIcon
+            colorScheme={colorScheme}
+            toggleColorScheme={toggleColorScheme}
+          />
+        ),
+      
+      }}
+    >
+      {children}
+    </Stack.Navigator>
+  );
+}
+
 export default function App() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
+
   return (
-    <NavigationContainer >
-      <Stack.Navigator>
-        <Stack.Screen
-          name="home"
-          component={Home}
-          options={{
-            headerTitle: () => (
-              <NavIcon
-                colorScheme={colorScheme}
-                toggleColorScheme={toggleColorScheme}
-                icon={icon}
-              />
-            ),
-            headerStyle: {
-              backgroundColor:
-                colorScheme === "dark" ? colorStyle.dark : colorStyle.light,
-            },
-          }}
-        />
-        <Stack.Screen
-          name="login"
-          component={Login}
-          options={{
-            headerStyle: {
-              backgroundColor:
-                colorScheme === "dark" ? colorStyle.dark : colorStyle.light,
-            },
-            headerLeft: () => (
-              <NavIcon
-                colorScheme={colorScheme}
-                toggleColorScheme={toggleColorScheme}
-                icon={icon}
-              />
-            ),
-          }}
-        />
-          <Stack.Screen
-          name="register"
-          component={Register}
-          options={{
-            headerStyle: {
-              backgroundColor:
-                colorScheme === "dark" ? colorStyle.dark : colorStyle.light,
-            },
-            headerLeft: () => (
-              <NavIcon
-                colorScheme={colorScheme}
-                toggleColorScheme={toggleColorScheme}
-                icon={icon}
-              />
-            ),
-          }}
-        />
-      </Stack.Navigator>
+    <NavigationContainer>
+      <MyStackNavigator toggleColorScheme={toggleColorScheme}>
+        <Stack.Screen name="home" component={Home} />
+        <Stack.Screen name="login" component={Login} />
+        <Stack.Screen name="register" component={Register} />
+      </MyStackNavigator>
       <StatusBar hidden={true} />
     </NavigationContainer>
   );
