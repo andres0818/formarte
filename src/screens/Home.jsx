@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import {View } from "react-native";
 import Header from "../components/Header";
 import Slide from "../components/Slide";
 import InfoText from "../components/InfoText";
@@ -26,9 +26,3 @@ const Home = ({ navigation, route }) => {
 };
 
 export default Home;
-
-const styles = StyleSheet.create({
-  navbar: {
-    position: 1,
-  },
-});
