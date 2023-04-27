@@ -8,6 +8,9 @@ import Login from "./src/screens/Login";
 import { StatusBar } from "react-native";
 import Register from "./src/screens/Register";
 import { RUTAS } from "./src/RoutesVariants";
+import Retate from "./src/screens/Retate";
+import Entrenate from "./src/screens/Entrenate";
+import Hazlo from "./src/screens/Hazlo";
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +42,9 @@ export default function App() {
         <Stack.Screen name={RUTAS.HOME} component={Home} />
         <Stack.Screen name={RUTAS.LOGIN} component={Login} />
         <Stack.Screen name={RUTAS.REGISTER} component={Register} />
+        <Stack.Screen name={RUTAS.RETATE} component={Retate} />
+        <Stack.Screen name={RUTAS.ENTRENATE} component={Entrenate} />
+        <Stack.Screen name={RUTAS.HAZLO} component={Hazlo} />
       </MyStackNavigator>
       <StatusBar hidden={true} />
     </NavigationContainer>
