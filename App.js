@@ -3,11 +3,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useColorScheme } from "nativewind";
 import NavIcon from "./src/components/NavIcon";
-import { colorStyle } from "./src/Styles/variants";
 import Home from "./src/screens/Home";
 import Login from "./src/screens/Login";
 import { StatusBar } from "react-native";
 import Register from "./src/screens/Register";
+import { RUTAS } from "./src/RoutesVariants";
 
 const Stack = createNativeStackNavigator();
 
@@ -23,7 +23,6 @@ function MyStackNavigator({ children, toggleColorScheme }) {
             toggleColorScheme={toggleColorScheme}
           />
         ),
-      
       }}
     >
       {children}
@@ -37,9 +36,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <MyStackNavigator toggleColorScheme={toggleColorScheme}>
-        <Stack.Screen name="home" component={Home} />
-        <Stack.Screen name="login" component={Login} />
-        <Stack.Screen name="register" component={Register} />
+        <Stack.Screen name={RUTAS.HOME} component={Home} />
+        <Stack.Screen name={RUTAS.LOGIN} component={Login} />
+        <Stack.Screen name={RUTAS.REGISTER} component={Register} />
       </MyStackNavigator>
       <StatusBar hidden={true} />
     </NavigationContainer>
