@@ -17,7 +17,7 @@ const FormRegister = ({ navigation }) => {
       </TouchableOpacity>
 
       <View className="flex flex-row justify-center mt-8">
-        <Text className="flex justify-center font-bold text-base">
+        <Text className="flex justify-center font-bold text-base dark:text-white">
           ¿Ya tienes cuenta?,{" "}
         </Text>
         <TouchableOpacity onPress={() => navigation.navigate("login")}>

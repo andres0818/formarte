@@ -14,7 +14,7 @@ const FormLogin = ({ navigation }) => {
         <Text className="text-white font-bold text-3xl">Inicia sesión</Text>
       </TouchableOpacity>
       <View className='flex flex-row justify-center mt-8' >
-        <Text className="flex justify-center font-bold text-base">¿No tienes cuenta?, </Text>
+        <Text className="flex justify-center font-bold text-base dark:text-white">¿No tienes cuenta?, </Text>
         <TouchableOpacity
         onPress={()=>navigation.navigate('register') }>
           <Text className="text-blue-700 dark:text-green-400 text-base font-bold">
