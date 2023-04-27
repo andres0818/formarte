@@ -18,6 +18,7 @@ const NavBar = ({ navigation, route }) => {
         className={
           route?.name === RUTAS.ENTRENATE && "bg-gray-300 dark:bg-gray-600 "
         }
+        onPress={() => navigation.navigate(RUTAS.ENTRENATE)}
       >
         <Image style={styles.img} source={icon.entrenador} />
       </TouchableOpacity>
@@ -25,6 +26,7 @@ const NavBar = ({ navigation, route }) => {
         className={
           route?.name === RUTAS.HAZLO && "bg-gray-300 dark:bg-gray-600 "
         }
+        onPress={() => navigation.navigate(RUTAS.HAZLO)}
       >
         <Image style={styles.img} source={icon.prueba} />
       </TouchableOpacity>
@@ -32,6 +34,7 @@ const NavBar = ({ navigation, route }) => {
         className={
           route?.name === RUTAS.RETATE && "bg-gray-300 dark:bg-gray-600 "
         }
+        onPress={() => navigation.navigate(RUTAS.RETATE)}
       >
         <Image style={styles.img} source={icon.graduado} />
       </TouchableOpacity>
