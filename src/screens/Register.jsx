@@ -5,11 +5,11 @@ import FormLogin from "../components/FormLogin";
 import { KeyboardAvoidingScrollView } from "@tbnb/react-native-keyboard-sticky-avoiding-scroll-view";
 import FormRegister from "../components/FormRegister";
 
-const Register = ({ navigation }) => {
+const Register = ({ navigation,route }) => {
   return (
     <View className="flex-1 bg-white dark:bg-gray-700">
       <KeyboardAvoidingScrollView
-        stickyFooter={<NavBar navigation={navigation} />}
+        stickyFooter={<NavBar route={route} navigation={navigation} />}
       >
         <View className="mt-10"></View>
         <Header titulo="Registrarse" subtitulo="" />

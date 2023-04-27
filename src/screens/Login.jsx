@@ -5,11 +5,11 @@ import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 import FormLogin from "../components/FormLogin";
 
-const Login = ({ navigation }) => {
+const Login = ({ navigation,route }) => {
   return (
     <View className="flex-1 bg-white dark:bg-gray-700">
       <KeyboardAvoidingScrollView
-        stickyFooter={<NavBar navigation={navigation} />}
+        stickyFooter={<NavBar route={route} navigation={navigation} />}
       >
         <View className="mt-10"></View>
         <Header titulo="Inicio Sesión" subtitulo="" />
