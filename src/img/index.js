@@ -13,6 +13,7 @@ import luna from "./luna.png";
 import sol from "./sol.png";
 import formarte from "./formarte.png";
 import fondoFiltro from "./Fondo-filtros.jpg";
+import studying from "./banner-studying.jpg";
 
 export {
   usuario,
@@ -30,4 +31,5 @@ export {
   sol,
   formarte,
   fondoFiltro,
+  studying
 };

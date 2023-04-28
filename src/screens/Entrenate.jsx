@@ -1,11 +1,12 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { Image, Text, View } from "react-native";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 import { KeyboardAvoidingScrollView } from "@tbnb/react-native-keyboard-sticky-avoiding-scroll-view";
 import ListVideos from "../components/ListVideos";
 import OnlineAdvice from "../components/OnlineAdvice";
 import OnlineClasses from "../components/OnlineClasses";
+import { studying } from "../img";
 
 const Entrenate = ({ navigation, route }) => {
   return (
@@ -17,9 +18,15 @@ const Entrenate = ({ navigation, route }) => {
           titulo="Entrénate"
           subtitulo="Herramientas para tu Éxito Académico"
         />
-          <ListVideos />
-          <OnlineAdvice/>
-          <OnlineClasses/>
+        <View className="w-full h-28 my-2 items-center overflow-hidden">
+          <Image className=" w-full " source={studying} />
+          <Text className="absolute mt-10 text-white font-bold text-xl">
+            Camino a la U
+          </Text>
+        </View>
+        <ListVideos />
+        <OnlineAdvice />
+        <OnlineClasses />
       </KeyboardAvoidingScrollView>
     </View>
   );
