@@ -23,10 +23,10 @@ const Videos = ({
   };
 
   return (
-    <View className="">
+    <View className="my-0.5">
       <TouchableOpacity
         onPress={handlerPress}
-        className={`flex justify-center h-10 bg-gray-100 dark:bg-gray-600 `}
+        className={`flex justify-center h-10 bg-gray-200 dark:bg-gray-500 `}
         style={{ elevation: 12 }}
       >
         <Text className="text-center text-xl font-bold dark:text-white">{title}</Text>
