@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 
-const HiddenBtn = ({ children }) => {
+const HiddenBtn = ({ title,children }) => {
   const [isActive, setIsActive] = useState("h-0 hidden");
 
   const handlerPress = () => {
@@ -15,7 +15,7 @@ const HiddenBtn = ({ children }) => {
         onPress={handlerPress}
       >
         <Text className="text-center text-2xl font-bold  text-green-500">
-          Videos explicativos
+          {title}
         </Text>
       </TouchableOpacity>
       <View className={`${isActive}`}>

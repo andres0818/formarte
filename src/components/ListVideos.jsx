@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import React from "react";
 import Videos from "./Videos";
 import HiddenBtn from "./HiddenBtn";
 
 const ListVideos = () => {
   return (
-    <HiddenBtn>
+    <HiddenBtn title='Videos explicativos'>
       <Videos title="Ingles" />
       <Videos title="Lenguaje" />
       <Videos title="Matemáticas" />
