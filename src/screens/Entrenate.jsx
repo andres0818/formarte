@@ -1,8 +1,9 @@
 import React from "react";
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 import { KeyboardAvoidingScrollView } from "@tbnb/react-native-keyboard-sticky-avoiding-scroll-view";
+import ListVideos from "../components/ListVideos";
 
 const Entrenate = ({ navigation, route }) => {
   return (
@@ -10,7 +11,11 @@ const Entrenate = ({ navigation, route }) => {
       <KeyboardAvoidingScrollView
         stickyFooter={<NavBar route={route} navigation={navigation} />}
       >
-        <Header titulo="Entrénate" subtitulo="Herramientas para tu Éxito Académico"/>
+        <Header
+          titulo="Entrénate"
+          subtitulo="Herramientas para tu Éxito Académico"
+        />
+      <ListVideos />
       </KeyboardAvoidingScrollView>
     </View>
   );
