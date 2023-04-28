@@ -5,7 +5,7 @@ import Videos from "./Videos";
 const ListVideos = () => {
   return (
     <View>
-      <Text className="text-center text-2xl font-bold text-green-500">
+      <Text className="text-center text-2xl font-bold mb-8 text-green-500">
         Videos explicativos
       </Text>
       <View>
