@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar";
 import { KeyboardAvoidingScrollView } from "@tbnb/react-native-keyboard-sticky-avoiding-scroll-view";
 import ListVideos from "../components/ListVideos";
 import OnlineAdvice from "../components/OnlineAdvice";
+import OnlineClasses from "../components/OnlineClasses";
 
 const Entrenate = ({ navigation, route }) => {
   return (
@@ -18,6 +19,7 @@ const Entrenate = ({ navigation, route }) => {
         />
           <ListVideos />
           <OnlineAdvice/>
+          <OnlineClasses/>
       </KeyboardAvoidingScrollView>
     </View>
   );
