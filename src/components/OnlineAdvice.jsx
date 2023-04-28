@@ -19,7 +19,7 @@ const OnlineAdvice = () => {
         className="text-center border-b font-bold text-lg h-12  bg-white dark:bg-gray-300"
         placeholder="Materia o asignatura"
       />
-      <TouchableOpacity className='bg-green-400 py-3 mx-4 mt-0.5 rounded-lg'>
+      <TouchableOpacity className='bg-green-400 py-3 mx-4 my-1 rounded-lg'>
         <Text className='text-white text-center font-bold text-lg'>Agendar</Text>
       </TouchableOpacity>
     </HiddenBtn>
