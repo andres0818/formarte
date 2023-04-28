@@ -12,6 +12,7 @@ import recurso from "./Recurso.png";
 import luna from "./luna.png";
 import sol from "./sol.png";
 import formarte from "./formarte.png";
+import fondoFiltro from "./Fondo-filtros.jpg";
 
 export {
   usuario,
@@ -27,5 +28,6 @@ export {
   recurso,
   luna,
   sol,
-  formarte
+  formarte,
+  fondoFiltro,
 };
